@@ -15,6 +15,7 @@ void testApp::setup(){
 
 //--------------------------------------------------------------
 void testApp::update(){
+    parseOsc();
 }
 
 //--------------------------------------------------------------
@@ -66,6 +67,9 @@ void testApp::keyPressed(int key){
         case 'c':
             carrousel.randomize_color();
             break;
+        case 'f':
+            ofToggleFullscreen();
+            break;
         default:
             break;
     }
@@ -100,10 +104,13 @@ void testApp::parseOsc(){
 		receiver.getNextMessage(&m);
         
 		if(m.getAddress() == "/key_down"){
-            launchGame();
+            pushButton();
             break;
 		}
 	}
-	while(receiver.hasWaitingMessages());
+	while(receiver.hasWaitingMessages()){
+		ofxOscMessage m;
+		receiver.getNextMessage(&m);
+    }
 }
 
