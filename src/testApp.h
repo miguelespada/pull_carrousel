@@ -13,9 +13,9 @@ class testApp : public ofBaseApp{
 		
 		void keyPressed(int key);
 		void keyReleased(int key);
-    
-        ofImage background, portal;
 
         PrizeManager prizeManager;
         Carrousel carrousel;
+        bool has_prize = false;
 };
+

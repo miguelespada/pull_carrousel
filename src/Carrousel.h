@@ -16,25 +16,37 @@
 
 class Carrousel{
 public:
+    Carrousel();
+
     void load_prizes();
     void start(string prize);
     void draw();
     void update();
-    float screen_center();
-    float icon_size();
+    int screen_width();
+    int screen_height();
+    int icon_size();
     bool has_stopped();
     
-    
 private:
-    void fill_carrousel(string prize);
-    void compute_carrousel();
     
+    void draw_background();
+    void draw_background_art();
+    void draw_masks();
+    void draw_carrousel();
+    void draw_prize(prize p);
+    void fill_carrousel(string prize);
+
+    void compute_carrousel();
     ofxJSONElement settings;
     int exp_time, linear_time;
     float speed, decay, time, prize_x;
     vector<prize> carrousel;
     std::map<std::string, ofImage> prize_images;
     std::map<std::string, ofImage> prize_captions;
+    int width, height, icon_width;
+    string assets_path;
+    ofImage background, portal;
+    
 };
 
 

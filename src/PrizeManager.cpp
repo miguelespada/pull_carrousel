@@ -25,20 +25,12 @@ string PrizeManager::present_time(){
 
 int PrizeManager::next_prize(){
     
-    bool parsingSuccessful = prizes.open(JSON_FILE);
-    
-    if (parsingSuccessful)
-    {
-        int i = 0;
-        while(i < prizes.size()){
-            if(prizes[i]["enabled"].asInt() == 1)
-                return i;
-            i ++;
-        }
-    }
-    else
-    {
-        ofLogError("ofApp::setup")  << "Failed to parse JSON" << endl;
+    prizes.open(JSON_FILE);
+    int i = 0;
+    while(i < prizes.size()){
+        if(prizes[i]["enabled"].asInt() == 1)
+            return i;
+        i ++;
     }
     return -1;
 };

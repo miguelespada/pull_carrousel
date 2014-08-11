@@ -32,6 +32,7 @@ public:
 private:
     ofxJSONElement prizes;
     int currentPrizeIndex = -1;
+    string current_prize;
 };
 
 #endif /* defined(__pull_carrousel__PrizeManager__) */
