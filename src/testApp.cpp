@@ -4,9 +4,13 @@
 //--------------------------------------------------------------        
 void testApp::setup(){
     
+	cout << "listening for osc messages on port " << PORT << "\n";
+	receiver.setup(PORT);
+    
     ofEnableAlphaBlending();
     ofSetVerticalSync(true);
     ofSetFrameRate(30);
+    ofHideCursor();
 }
 
 //--------------------------------------------------------------
@@ -57,21 +61,7 @@ void testApp::keyPressed(int key){
             cout << "Time to next prize: " << prizeManager.seconds_to_next_prize() << " s" << endl;
             break;
         case ' ':
-            switch (state) {
-                case 0:
-                    launchGame();
-                    state ++;
-                    break;
-                case 1:
-                    state --;
-                    break;
-                case 2:
-                    state = 0;
-                    break;
-                default:
-                    break;
-            }
-            
+            pushButton();
             break;
         case 'c':
             carrousel.randomize_color();
@@ -81,8 +71,39 @@ void testApp::keyPressed(int key){
     }
 }
 
+void testApp::pushButton(){
+    switch (state) {
+        case 0:
+            launchGame();
+            state ++;
+            break;
+        case 1:
+            state --;
+            break;
+        case 2:
+            state = 0;
+            break;
+        default:
+            break;
+    }
+    
+}
 //--------------------------------------------------------------
 void testApp::keyReleased(int key){
+}
 
+void testApp::parseOsc(){
+    // check for waiting messages
+	while(receiver.hasWaitingMessages()){
+		// get the next message
+		ofxOscMessage m;
+		receiver.getNextMessage(&m);
+        
+		if(m.getAddress() == "/key_down"){
+            launchGame();
+            break;
+		}
+	}
+	while(receiver.hasWaitingMessages());
 }
 

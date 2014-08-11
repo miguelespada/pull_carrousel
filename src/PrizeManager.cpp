@@ -7,7 +7,6 @@
 //
 
 #include "PrizeManager.h"
-#define JSON_FILE "/Users/miguel/Desktop/premios.json"
 
 
 string PrizeManager::present_time(){
@@ -25,7 +24,7 @@ string PrizeManager::present_time(){
 
 int PrizeManager::next_prize(){
     
-    prizes.open(JSON_FILE);
+    prizes.open(ofToDataPath("premios.json"));
     int i = 0;
     while(i < prizes.size()){
         if(prizes[i]["enabled"].asInt() == 1)
@@ -48,7 +47,7 @@ void PrizeManager::disable_current_prize(){
     if(currentPrizeIndex != -1){
         cout << get_current_prize() << " disabled" << endl;
         prizes[currentPrizeIndex]["enabled"] = 0;
-        prizes.save(JSON_FILE, true);
+        prizes.save(ofToDataPath("premios.json"), true);
         currentPrizeIndex = -1;
     }
 };

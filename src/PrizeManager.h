@@ -27,7 +27,7 @@ public:
     int seconds_to_next_prize();
     
     void start_carrousel();
-    void load_prizes();
+    void load_assets();
     
 private:
     ofxJSONElement prizes;

@@ -4,6 +4,9 @@
 #include "ofMain.h"
 #include "PrizeManager.h"
 #include "Carrousel.h"
+#include "ofxOsc.h"
+
+#define PORT 8000
 
 class testApp : public ofBaseApp{
 	public:
@@ -13,12 +16,17 @@ class testApp : public ofBaseApp{
 		
 		void keyPressed(int key);
 		void keyReleased(int key);
-
+    
+    void launchGame();
+    void pushButton();
+    void parseOsc();
+    
         PrizeManager prizeManager;
         Carrousel carrousel;
-        void launchGame();
     
     string prize;
     int state = 0;
+    
+    ofxOscReceiver receiver;
 };
 

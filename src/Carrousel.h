@@ -18,7 +18,7 @@ class Carrousel{
 public:
     Carrousel();
 
-    void load_prizes();
+    void load_assets();
     void start(string prize);
     void draw();
     void update();
@@ -50,15 +50,16 @@ private:
     
     std::map<std::string, ofImage> prize_images, prize_captions, prize_winnings;
     ofImage rules[3];
-    ofImage background_animations[2];
+    ofImage background_animations[2], portal_animations[2];
     
     int width, height, icon_width;
     string assets_path;
     ofImage background, portal;
     int current_color = 0;
     
-    int rule_index = 0;
-    int animation_index = 0;
+    int rule_index = 0,
+        animation_index = 0,
+    portal_animation_index = 0;
 };
 
 

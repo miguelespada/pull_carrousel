@@ -9,7 +9,6 @@
 #include "Carrousel.h"
 #define PRIZE_NUMBER 9
 
-#define SETTINGS_FILE "/Users/miguel/Desktop/settings.json"
 
 string prize_names[] = {"skate", "bicicleta", "ipad",
                         "gopro","impresora", "gafas",
@@ -18,15 +17,15 @@ int back_colors[10];
 
 
 Carrousel::Carrousel(){
-    settings.open(SETTINGS_FILE);
+    settings.open(ofToDataPath("settings.json"));
     width = settings["width"].asInt();
     height = settings["height"].asInt();
     icon_width = settings["icon"].asInt();
-    assets_path = settings["assets"].asString() + settings["width"].asString() + "x" + settings["height"].asString() + "/";
+    assets_path = ofToDataPath("assets") + "/" + settings["width"].asString() + "x" + settings["height"].asString() + "/";
     cout << "Resolution: " << width << " x " << height << endl;
     cout << "Assets folder: " << assets_path << endl;
     
-    load_prizes();
+    load_assets();
     background.loadImage(assets_path + "background.png");
     portal.loadImage(assets_path + "portal.png");
     
@@ -50,6 +49,7 @@ int Carrousel::screen_height(){
 }
 
 void Carrousel::update(){
+    
     if(time > 0){
         prize_x += speed;
         
@@ -69,6 +69,7 @@ void Carrousel::update(){
 }
 
 void Carrousel::draw(){
+    
     draw_background();
     draw_carrousel();
     draw_background_art();
@@ -81,10 +82,12 @@ void Carrousel::draw_rules(){
     rules[rule_index].draw(0, 0);
     background_animations[animation_index].draw(0, 0);
     
+    
     if(ofGetFrameNum() % 180 == 0)
         rule_index = (rule_index + 1) % 3;
     if(ofGetFrameNum() % 20 == 0)
         animation_index = (animation_index + 1) % 2;
+    
 }
 
 void Carrousel::draw_winning(string prize){
@@ -98,6 +101,7 @@ ofColor Carrousel::get_current_color(){
 
 void Carrousel::draw_background(){
     ofBackground(get_current_color());
+    
     
 }
 
@@ -122,6 +126,10 @@ void Carrousel::draw_masks(){
 void Carrousel::draw_background_art(){
     background.draw(0, 0);
     portal.draw(0, 0);
+    portal_animations[portal_animation_index].draw(0, 0);
+    
+    if(ofGetFrameNum() % 60 == 0)
+        portal_animation_index = (portal_animation_index + 1) % 2;
 }
 
 void Carrousel::draw_prize(prize p){
@@ -147,7 +155,7 @@ bool Carrousel::has_stopped(){
     return time == 0;
 }
 
-void Carrousel::load_prizes(){
+void Carrousel::load_assets(){
     for(int i = 0; i < PRIZE_NUMBER; i++){
         string filename = assets_path + "../icons/" + prize_names[i] + ".png";
         prize_images[prize_names[i]].loadImage( filename );
@@ -169,6 +177,12 @@ void Carrousel::load_prizes(){
         background_animations[i].loadImage(filename);
         cout << "Loading: " << filename << endl;
     }
+    
+    for(int i = 0; i < 2; i ++){
+        string filename = assets_path + "portal_animation_" + ofToString(i) + ".png";
+        portal_animations[i].loadImage(filename);
+        cout << "Loading: " << filename << endl;
+    }
 }
 
 void Carrousel::start(string prize){
@@ -178,7 +192,7 @@ void Carrousel::start(string prize){
 
 void Carrousel::compute_carrousel(){
     
-    bool parsingSuccessful = settings.open(SETTINGS_FILE);
+    bool parsingSuccessful = settings.open(ofToDataPath("settings.json"));
     
     speed = settings["speed"].asInt();
     decay = settings["decay"].asFloat();
