@@ -16,6 +16,9 @@ class testApp : public ofBaseApp{
 
         PrizeManager prizeManager;
         Carrousel carrousel;
-        bool has_prize = false;
+        void launchGame();
+    
+    string prize;
+    int state = 0;
 };
 

@@ -15,14 +15,39 @@ void testApp::update(){
 
 //--------------------------------------------------------------
 void testApp::draw(){
-    
-    carrousel.draw();
 
-    carrousel.update();
-    
-    if(carrousel.has_stopped() && has_prize){
-        prizeManager.disable_current_prize();
+    switch (state) {
+        case 0:
+            carrousel.draw_rules();
+            break;
+        case 1:
+            carrousel.draw();
+            
+            carrousel.update();
+            
+            if(carrousel.has_stopped()){
+                if(prize != "nothing")
+                    prizeManager.disable_current_prize();
+                state = 2;
+                ofSleepMillis(1500);
+            }
+            break;
+        case 2:
+            carrousel.draw_winning(prize);
+            break;
+        default:
+            break;
     }
+    
+}
+void testApp::launchGame(){
+    if(prizeManager.is_prize_enabled())
+        prize = prizeManager.get_current_prize();
+    else
+        prize = "nothing";
+    
+    cout << "Next prize is: " << prize << endl;
+    carrousel.start(prize);
 }
 
 //--------------------------------------------------------------
@@ -32,19 +57,24 @@ void testApp::keyPressed(int key){
             cout << "Time to next prize: " << prizeManager.seconds_to_next_prize() << " s" << endl;
             break;
         case ' ':
-            if(prizeManager.is_prize_enabled()){
-                string prize = prizeManager.get_current_prize();
-                cout << "Next prize is: " << prize << endl;
-                carrousel.start(prize);
-                has_prize = true;
-                
-            }
-            else{
-                cout << "Next prize is: " << "nothing" << endl;
-                carrousel.start("nothing");
-                has_prize = false;
+            switch (state) {
+                case 0:
+                    launchGame();
+                    state ++;
+                    break;
+                case 1:
+                    state --;
+                    break;
+                case 2:
+                    state = 0;
+                    break;
+                default:
+                    break;
             }
             
+            break;
+        case 'c':
+            carrousel.randomize_color();
             break;
         default:
             break;
