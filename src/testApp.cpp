@@ -11,6 +11,9 @@ void testApp::setup(){
     ofSetVerticalSync(true);
     ofSetFrameRate(30);
     ofHideCursor();
+    
+    carrousel.settings.load();
+    carrousel.assets.load(carrousel.settings.assets_path);
 }
 
 //--------------------------------------------------------------
@@ -34,11 +37,16 @@ void testApp::draw(){
                 if(prize != "nothing")
                     prizeManager.disable_current_prize();
                 state = 2;
-                ofSleepMillis(1500);
+                ofSleepMillis(carrousel.settings.sleep_time);
+                timer = ofGetElapsedTimeMillis();
             }
             break;
         case 2:
             carrousel.draw_winning(prize);
+            if((ofGetElapsedTimeMillis() - timer) > carrousel.settings.sleep_time * 2){
+                state = 0;
+                carrousel.settings.randomize_color();
+            }
             break;
         default:
             break;
@@ -65,10 +73,13 @@ void testApp::keyPressed(int key){
             pushButton();
             break;
         case 'c':
-            carrousel.randomize_color();
+            carrousel.settings.randomize_color();
             break;
         case 'f':
             ofToggleFullscreen();
+            break;
+        case 'r':
+            carrousel.settings.load();
             break;
         default:
             break;
@@ -82,10 +93,8 @@ void testApp::pushButton(){
             state ++;
             break;
         case 1:
-            state --;
-            break;
-        case 2:
-            state = 0;
+            if(!carrousel.has_stopped())
+                state --;
             break;
         default:
             break;

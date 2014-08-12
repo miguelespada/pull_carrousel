@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>32D2C43B-262C-40DD-8E0F-E0F7EB3CE7CC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>pull_carrousel</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>FC58FEC9-905A-4736-AD42-3260B3B5E979</key>
+		<string>https://github.com/miguelespada/pull_carrousel.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>pull_carrousel.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>FC58FEC9-905A-4736-AD42-3260B3B5E979</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/miguelespada/pull_carrousel.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>FC58FEC9-905A-4736-AD42-3260B3B5E979</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FC58FEC9-905A-4736-AD42-3260B3B5E979</string>
+			<key>IDESourceControlWCCName</key>
+			<string>pull_carrousel</string>
+		</dict>
+	</array>
+</dict>
+</plist>

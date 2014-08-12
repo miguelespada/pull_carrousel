@@ -11,25 +11,23 @@
 
 #include <iostream>
 #include "ofMain.h"
-#include "ofxJSON.h"
 #include "prize.h"
+
+#include "SettingsManager.h"
+#include "AssetsManager.h"
 
 class Carrousel{
 public:
-    Carrousel();
 
-    void load_assets();
     void start(string prize);
     void draw();
-    void update();
-    void randomize_color();
-    int screen_width();
-    int screen_height();
-    int icon_size();
-    bool has_stopped();
-    
     void draw_winning(string prize);
     void draw_rules();
+    void update();
+    bool has_stopped();
+    SettingsManager settings;
+    AssetsManager assets;
+    
     
 private:
     
@@ -39,27 +37,12 @@ private:
     void draw_carrousel();
     void draw_prize(prize p);
     void fill_carrousel(string prize);
-
     void compute_carrousel();
-    ofColor get_current_color();
+    void update_speed();
     
-    ofxJSONElement settings;
-    int exp_time, linear_time;
-    float speed, decay, time, prize_x;
+    float time, prize_x, speed;
     vector<prize> carrousel;
     
-    std::map<std::string, ofImage> prize_images, prize_captions, prize_winnings;
-    ofImage rules[3];
-    ofImage background_animations[2], portal_animations[2];
-    
-    int width, height, icon_width;
-    string assets_path;
-    ofImage background, portal;
-    int current_color = 0;
-    
-    int rule_index = 0,
-        animation_index = 0,
-    portal_animation_index = 0;
 };
 
 

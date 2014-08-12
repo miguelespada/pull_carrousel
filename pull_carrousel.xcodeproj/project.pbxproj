@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4906270419966854007E4471 /* PrizeManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4906270219966854007E4471 /* PrizeManager.cpp */; };
+		493029B2199A10DA0060EBD9 /* SettingsManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 493029B0199A10DA0060EBD9 /* SettingsManager.cpp */; };
+		493029B5199A141E0060EBD9 /* AssetsManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 493029B3199A141E0060EBD9 /* AssetsManager.cpp */; };
 		496D30C41997C4B500C7BD42 /* Carrousel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 496D30C21997C4B500C7BD42 /* Carrousel.cpp */; };
 		4997BEF919963A4000CB854E /* ofxJSONElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4997BEF51996323B00CB854E /* ofxJSONElement.cpp */; };
 		4997BEFA19963A4700CB854E /* jsoncpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4997BEF21996323B00CB854E /* jsoncpp.cpp */; };
@@ -74,6 +76,10 @@
 /* Begin PBXFileReference section */
 		4906270219966854007E4471 /* PrizeManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PrizeManager.cpp; sourceTree = "<group>"; };
 		4906270319966854007E4471 /* PrizeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrizeManager.h; sourceTree = "<group>"; };
+		493029B0199A10DA0060EBD9 /* SettingsManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SettingsManager.cpp; sourceTree = "<group>"; };
+		493029B1199A10DA0060EBD9 /* SettingsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsManager.h; sourceTree = "<group>"; };
+		493029B3199A141E0060EBD9 /* AssetsManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AssetsManager.cpp; sourceTree = "<group>"; };
+		493029B4199A141E0060EBD9 /* AssetsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetsManager.h; sourceTree = "<group>"; };
 		496D30C01997AB7100C7BD42 /* prize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prize.h; sourceTree = "<group>"; };
 		496D30C21997C4B500C7BD42 /* Carrousel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Carrousel.cpp; sourceTree = "<group>"; };
 		496D30C31997C4B500C7BD42 /* Carrousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Carrousel.h; sourceTree = "<group>"; };
@@ -411,6 +417,10 @@
 				4906270219966854007E4471 /* PrizeManager.cpp */,
 				4906270319966854007E4471 /* PrizeManager.h */,
 				496D30C21997C4B500C7BD42 /* Carrousel.cpp */,
+				493029B0199A10DA0060EBD9 /* SettingsManager.cpp */,
+				493029B1199A10DA0060EBD9 /* SettingsManager.h */,
+				493029B3199A141E0060EBD9 /* AssetsManager.cpp */,
+				493029B4199A141E0060EBD9 /* AssetsManager.h */,
 				496D30C31997C4B500C7BD42 /* Carrousel.h */,
 			);
 			path = src;
@@ -521,8 +531,10 @@
 				49EC55161998FE91005BD05F /* ofxOscBundle.cpp in Sources */,
 				49EC55171998FE91005BD05F /* ofxOscMessage.cpp in Sources */,
 				49EC55181998FE91005BD05F /* ofxOscReceiver.cpp in Sources */,
+				493029B2199A10DA0060EBD9 /* SettingsManager.cpp in Sources */,
 				49EC55191998FE91005BD05F /* ofxOscSender.cpp in Sources */,
 				4997BEFA19963A4700CB854E /* jsoncpp.cpp in Sources */,
+				493029B5199A141E0060EBD9 /* AssetsManager.cpp in Sources */,
 				4997BEF919963A4000CB854E /* ofxJSONElement.cpp in Sources */,
 				496D30C41997C4B500C7BD42 /* Carrousel.cpp in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,

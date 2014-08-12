@@ -21,11 +21,12 @@ class testApp : public ofBaseApp{
     void pushButton();
     void parseOsc();
     
-        PrizeManager prizeManager;
-        Carrousel carrousel;
+    PrizeManager prizeManager;
+    Carrousel carrousel;
     
     string prize;
     int state = 0;
+    unsigned long long timer;
     
     ofxOscReceiver receiver;
 };
