@@ -37,6 +37,7 @@ void testApp::draw(){
                 if(prize != "nothing"){
                     prizeManager.disable_current_prize();
                     prizeManager.remaining_prizes();
+                    cout << "Time to next prize: " << prizeManager.seconds_to_next_prize() << " s" << endl;
                 }
                 state = 2;
                 ofSleepMillis(carrousel.settings.sleep_time);
@@ -116,7 +117,6 @@ void testApp::parseOsc(){
 		// get the next message
 		ofxOscMessage m;
 		receiver.getNextMessage(&m);
-        
 		if(m.getAddress() == "/key_down"){
             pushButton();
             break;

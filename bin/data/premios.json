@@ -176,22 +176,22 @@
    },
    {
       "date" : "13:05:56",
-      "enabled" : 1,
+      "enabled" : 0,
       "prize" : "descuento"
    },
    {
       "date" : "13:08:33",
-      "enabled" : 1,
+      "enabled" : 0,
       "prize" : "gafas"
    },
    {
       "date" : "13:11:13",
-      "enabled" : 1,
+      "enabled" : 0,
       "prize" : "auriculares"
    },
    {
       "date" : "13:22:25",
-      "enabled" : 1,
+      "enabled" : 0,
       "prize" : "gafas"
    },
    {
