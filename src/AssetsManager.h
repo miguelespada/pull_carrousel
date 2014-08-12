@@ -19,6 +19,7 @@ public:
     string random_prize();
     void draw_rules();
     void draw_background_art();
+    void draw_winning(string prize);
     
     std::map<std::string, ofImage> prize_images, prize_captions, prize_winnings;
     ofImage background_animations[2], portal_animations[2];

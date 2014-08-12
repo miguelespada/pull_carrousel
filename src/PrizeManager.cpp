@@ -34,6 +34,29 @@ int PrizeManager::next_prize(){
     return -1;
 };
 
+void PrizeManager::remaining_prizes(){
+    prizes.open(ofToDataPath("premios.json"));
+    int i = 0;
+    std::map<std::string, int> remaining;
+    
+    
+    while(i < prizes.size()){
+        if(prizes[i]["enabled"].asInt() == 1)
+            remaining[prizes[i]["prize"].asString()] += 1;
+        i ++;
+    }
+    
+    
+    ofFile file(ofToDataPath("remaining.txt"),ofFile::WriteOnly);
+    
+    for(auto iterator = remaining.begin(); iterator != remaining.end(); iterator++) {
+        file <<  iterator->first << " " << iterator->second << endl;
+    }
+    
+    file.close();
+    
+}
+
 bool PrizeManager::is_prize_enabled(){
     
     currentPrizeIndex = next_prize();

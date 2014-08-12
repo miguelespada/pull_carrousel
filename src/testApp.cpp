@@ -34,8 +34,10 @@ void testApp::draw(){
             carrousel.update();
             
             if(carrousel.has_stopped()){
-                if(prize != "nothing")
+                if(prize != "nothing"){
                     prizeManager.disable_current_prize();
+                    prizeManager.remaining_prizes();
+                }
                 state = 2;
                 ofSleepMillis(carrousel.settings.sleep_time);
                 timer = ofGetElapsedTimeMillis();
@@ -80,6 +82,9 @@ void testApp::keyPressed(int key){
             break;
         case 'r':
             carrousel.settings.load();
+            break;
+        case 'p':
+            prizeManager.remaining_prizes();
             break;
         default:
             break;

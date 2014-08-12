@@ -28,7 +28,6 @@ public:
     SettingsManager settings;
     AssetsManager assets;
     
-    
 private:
     
     void draw_background();

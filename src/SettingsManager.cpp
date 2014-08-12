@@ -39,5 +39,4 @@ ofColor SettingsManager::get_current_color(){
 
 void  SettingsManager::randomize_color(){
     current_color = int(ofRandom(10));
-    cout << current_color << endl;
 }

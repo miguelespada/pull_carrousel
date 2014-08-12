@@ -126,52 +126,52 @@
    },
    {
       "date" : "12:16:27",
-      "enabled" : 1,
+      "enabled" : 0,
       "prize" : "descuento"
    },
    {
       "date" : "12:21:15",
-      "enabled" : 1,
+      "enabled" : 0,
       "prize" : "auriculares"
    },
    {
       "date" : "12:28:59",
-      "enabled" : 1,
+      "enabled" : 0,
       "prize" : "descuento"
    },
    {
       "date" : "12:33:16",
-      "enabled" : 1,
+      "enabled" : 0,
       "prize" : "gafas"
    },
    {
       "date" : "12:33:23",
-      "enabled" : 1,
+      "enabled" : 0,
       "prize" : "auriculares"
    },
    {
       "date" : "12:40:35",
-      "enabled" : 1,
+      "enabled" : 0,
       "prize" : "auriculares"
    },
    {
       "date" : "12:53:32",
-      "enabled" : 1,
+      "enabled" : 0,
       "prize" : "gafas"
    },
    {
       "date" : "12:53:49",
-      "enabled" : 1,
+      "enabled" : 0,
       "prize" : "skate"
    },
    {
       "date" : "12:57:29",
-      "enabled" : 1,
+      "enabled" : 0,
       "prize" : "gafas"
    },
    {
       "date" : "13:01:38",
-      "enabled" : 1,
+      "enabled" : 0,
       "prize" : "auriculares"
    },
    {

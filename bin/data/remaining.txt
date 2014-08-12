@@ -1,0 +1,7 @@
+auriculares 37
+bicicleta 1
+descuento 19
+gafas 37
+gopro 1
+ipad 1
+skate 3

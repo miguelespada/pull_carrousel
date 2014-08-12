@@ -43,7 +43,7 @@ void Carrousel::draw_rules(){
 
 void Carrousel::draw_winning(string prize){
     draw_background();
-    assets.prize_winnings[prize].draw(0, 0);
+    assets.draw_winning(prize);
 }
 
 void Carrousel::draw_background(){

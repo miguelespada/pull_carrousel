@@ -21,6 +21,7 @@ class PrizeManager{
 public:
     string present_time();
     int next_prize();
+    void remaining_prizes();
     bool is_prize_enabled();
     void disable_current_prize();
     string get_current_prize();

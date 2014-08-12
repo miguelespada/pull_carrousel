@@ -74,3 +74,7 @@ void AssetsManager::draw_background_art(){
     if(ofGetFrameNum() % 60 == 0)
         portal_animation_index = (portal_animation_index + 1) % 2;
 }
+
+void AssetsManager::draw_winning(string prize){
+    prize_winnings[prize].draw(0, 0);
+}
