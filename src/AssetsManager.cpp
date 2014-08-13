@@ -8,12 +8,6 @@
 
 #include "AssetsManager.h"
 
-#define PRIZE_NUMBER 9
-
-string prize_names[PRIZE_NUMBER] = {"skate", "bicicleta", "ipad",
-    "gopro","impresora", "gafas",
-    "auriculares", "descuento", "nothing"};
-
 
 void AssetsManager::load(string assets_path){
     
@@ -33,13 +27,21 @@ void AssetsManager::load(string assets_path){
         cout << "Loading: " << filename << endl;
     }
     for(int i = 0; i < 3; i ++){
-        string filename = assets_path + "rules/rule_" + ofToString(i) + ".png";
-        rules[i].loadImage(filename);
-        cout << "Loading: " << filename << endl;
+        for(int j = 0; j < 4; j ++){
+            string filename = assets_path + "rules/rule-" + ofToString(i) + "-" + ofToString(j) + ".png";
+            rules[i][j].loadImage(filename);
+            cout << "Loading: " << filename << endl;
+        }
     }
     for(int i = 0; i < 2; i ++){
         string filename = assets_path + "rules/animation_" + ofToString(i) + ".png";
         background_animations[i].loadImage(filename);
+        cout << "Loading: " << filename << endl;
+    }
+    
+    for(int i = 0; i < 3; i ++){
+        string filename = assets_path + "rules/rules_background-" + ofToString(i) + ".png";
+        rules_background[i].loadImage(filename);
         cout << "Loading: " << filename << endl;
     }
     
@@ -54,17 +56,6 @@ string AssetsManager::random_prize(){
     return prize_names[int(ofRandom(PRIZE_NUMBER))];
 }
 
-void AssetsManager::draw_rules(){
-    rules[rule_index].draw(0, 0);
-    background_animations[animation_index].draw(0, 0);
-    
-    
-    if(ofGetFrameNum() % 300 == 0)
-        rule_index = (rule_index + 1) % 3;
-    if(ofGetFrameNum() % 20 == 0)
-        animation_index = (animation_index + 1) % 2;
-    
-}
 
 void AssetsManager::draw_background_art(){
     background.draw(0, 0);
@@ -77,4 +68,9 @@ void AssetsManager::draw_background_art(){
 
 void AssetsManager::draw_winning(string prize){
     prize_winnings[prize].draw(0, 0);
+}
+
+void AssetsManager::next_rule_language(){
+    rule_language = (rule_language + 1) % 3;
+    rule_index = 0;
 }

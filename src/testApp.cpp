@@ -14,6 +14,7 @@ void testApp::setup(){
     
     carrousel.settings.load();
     carrousel.assets.load(carrousel.settings.assets_path);
+    ofSetWindowPosition(0, 0);
 }
 
 //--------------------------------------------------------------
@@ -41,12 +42,13 @@ void testApp::draw(){
                 }
                 state = 2;
                 ofSleepMillis(carrousel.settings.sleep_time);
+                carrousel.assets.next_rule_language();
                 timer = ofGetElapsedTimeMillis();
             }
             break;
         case 2:
             carrousel.draw_winning(prize);
-            if((ofGetElapsedTimeMillis() - timer) > carrousel.settings.sleep_time * 2){
+            if((ofGetElapsedTimeMillis() - timer) > carrousel.settings.sleep_time * 4){
                 state = 0;
                 carrousel.settings.randomize_color();
             }
@@ -86,6 +88,9 @@ void testApp::keyPressed(int key){
             break;
         case 'p':
             prizeManager.remaining_prizes();
+            break;
+        case 'l':
+            carrousel.assets.next_rule_language();
             break;
         default:
             break;

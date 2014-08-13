@@ -38,5 +38,7 @@ ofColor SettingsManager::get_current_color(){
 }
 
 void  SettingsManager::randomize_color(){
-    current_color = int(ofRandom(10));
+    int prev_color = current_color;
+    while(current_color == prev_color)
+        current_color = int(ofRandom(10));
 }

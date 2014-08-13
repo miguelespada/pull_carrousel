@@ -37,11 +37,36 @@ void Carrousel::draw(){
 }
 
 void Carrousel::draw_rules(){
+    ofSetColor(255);
     draw_background();
-    assets.draw_rules();
+    assets.rules_background[assets.rule_language].draw(0,0);
+    assets.rules[assets.rule_language][assets.rule_index].draw(0, 0);
+    assets.background_animations[assets.animation_index].draw(0, 0);
+    if(settings.width == 960)
+        assets.prize_images[assets.prize_names[assets.rule_prize]].draw(754 - 90 , 180 - 90);
+    else
+        assets.prize_images[assets.prize_names[assets.rule_prize]].draw(200 ,100);
+    
+    int pace = 10;
+    if(ofGetFrameNum() % pace == 0){
+        assets.animation_index = (assets.animation_index + 1) % 2;
+    }
+    
+    if(ofGetFrameNum() % (4 * pace) == 0){
+        assets.rule_prize = (assets.rule_prize + 1) % 8;
+    }
+    
+    
+    if(ofGetFrameNum() % (8 * pace) == 0){
+        assets.rule_index = (assets.rule_index + 1) % 4;
+        settings.randomize_color();
+    }
+    
+    
 }
 
 void Carrousel::draw_winning(string prize){
+    ofSetColor(255);
     draw_background();
     assets.draw_winning(prize);
 }
