@@ -32,8 +32,9 @@ void Carrousel::update(){
 void Carrousel::draw(){
     draw_background();
     draw_carrousel();
-    draw_background_art();
     draw_masks();
+    ofSetColor(255);
+    draw_background_art();
 }
 
 void Carrousel::draw_rules(){

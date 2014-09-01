@@ -1,0 +1,672 @@
+[
+    {
+        "date": "10:12:38",
+        "enabled": 1,
+        "prize": "descuento"
+    },
+    {
+        "date": "10:16:32",
+        "enabled": 1,
+        "prize": "auriculares"
+    },
+    {
+        "date": "10:30:44",
+        "enabled": 1,
+        "prize": "gafas"
+    },
+    {
+        "date": "10:32:42",
+        "enabled": 1,
+        "prize": "auriculares"
+    },
+    {
+        "date": "10:36:56",
+        "enabled": 1,
+        "prize": "gafas"
+    },
+    {
+        "date": "10:44:47",
+        "enabled": 1,
+        "prize": "auriculares"
+    },
+    {
+        "date": "10:47:00",
+        "enabled": 1,
+        "prize": "gafas"
+    },
+    {
+        "date": "10:51:52",
+        "enabled": 1,
+        "prize": "gafas"
+    },
+    {
+        "date": "10:59:57",
+        "enabled": 1,
+        "prize": "auriculares"
+    },
+    {
+        "date": "11:00:30",
+        "enabled": 1,
+        "prize": "descuento"
+    },
+    {
+        "date": "11:07:10",
+        "enabled": 1,
+        "prize": "skate"
+    },
+    {
+        "date": "11:08:01",
+        "enabled": 1,
+        "prize": "gafas"
+    },
+    {
+        "date": "11:10:13",
+        "enabled": 1,
+        "prize": "auriculares"
+    },
+    {
+        "date": "11:19:28",
+        "enabled": 1,
+        "prize": "auriculares"
+    },
+    {
+        "date": "11:19:49",
+        "enabled": 1,
+        "prize": "gafas"
+    },
+    {
+        "date": "11:22:19",
+        "enabled": 1,
+        "prize": "descuento"
+    },
+    {
+        "date": "11:29:58",
+        "enabled": 1,
+        "prize": "auriculares"
+    },
+    {
+        "date": "11:39:28",
+        "enabled": 1,
+        "prize": "descuento"
+    },
+    {
+        "date": "11:42:58",
+        "enabled": 1,
+        "prize": "gafas"
+    },
+    {
+        "date": "11:46:43",
+        "enabled": 1,
+        "prize": "gafas"
+    },
+    {
+        "date": "11:49:12",
+        "enabled": 1,
+        "prize": "skate"
+    },
+    {
+        "date": "11:55:23",
+        "enabled": 1,
+        "prize": "auriculares"
+    },
+    {
+        "date": "11:59:06",
+        "enabled": 1,
+        "prize": "auriculares"
+    },
+    {
+        "date": "12:00:40",
+        "enabled": 1,
+        "prize": "descuento"
+    },
+    {
+        "date": "12:03:27",
+        "enabled": 1,
+        "prize": "gafas"
+    },
+    {
+        "date": "12:19:53",
+        "enabled": 1,
+        "prize": "auriculares"
+    },
+    {
+        "date": "12:23:17",
+        "enabled": 1,
+        "prize": "gafas"
+    },
+    {
+        "date": "12:36:04",
+        "enabled": 1,
+        "prize": "gafas"
+    },
+    {
+        "date": "12:36:29",
+        "enabled": 1,
+        "prize": "auriculares"
+    },
+    {
+        "date": "12:42:11",
+        "enabled": 1,
+        "prize": "descuento"
+    },
+    {
+        "date": "12:49:18",
+        "enabled": 1,
+        "prize": "gafas"
+    },
+    {
+        "date": "12:50:57",
+        "enabled": 1,
+        "prize": "auriculares"
+    },
+    {
+        "date": "12:54:48",
+        "enabled": 1,
+        "prize": "gafas"
+    },
+    {
+        "date": "13:03:59",
+        "enabled": 1,
+        "prize": "bicicleta"
+    },
+    {
+        "date": "13:05:43",
+        "enabled": 1,
+        "prize": "auriculares"
+    },
+    {
+        "date": "13:14:36",
+        "enabled": 1,
+        "prize": "auriculares"
+    },
+    {
+        "date": "13:19:45",
+        "enabled": 1,
+        "prize": "gafas"
+    },
+    {
+        "date": "13:21:40",
+        "enabled": 1,
+        "prize": "descuento"
+    },
+    {
+        "date": "13:25:18",
+        "enabled": 1,
+        "prize": "gafas"
+    },
+    {
+        "date": "13:29:40",
+        "enabled": 1,
+        "prize": "descuento"
+    },
+    {
+        "date": "13:30:40",
+        "enabled": 1,
+        "prize": "auriculares"
+    },
+    {
+        "date": "13:42:23",
+        "enabled": 1,
+        "prize": "auriculares"
+    },
+    {
+        "date": "13:42:52",
+        "enabled": 1,
+        "prize": "gafas"
+    },
+    {
+        "date": "13:54:16",
+        "enabled": 1,
+        "prize": "descuento"
+    },
+    {
+        "date": "14:01:12",
+        "enabled": 1,
+        "prize": "gafas"
+    },
+    {
+        "date": "14:03:34",
+        "enabled": 1,
+        "prize": "auriculares"
+    },
+    {
+        "date": "14:05:40",
+        "enabled": 1,
+        "prize": "auriculares"
+    },
+    {
+        "date": "14:14:36",
+        "enabled": 1,
+        "prize": "gafas"
+    },
+    {
+        "date": "14:22:36",
+        "enabled": 1,
+        "prize": "gafas"
+    },
+    {
+        "date": "14:27:44",
+        "enabled": 1,
+        "prize": "auriculares"
+    },
+    {
+        "date": "14:39:20",
+        "enabled": 1,
+        "prize": "gafas"
+    },
+    {
+        "date": "14:40:13",
+        "enabled": 1,
+        "prize": "auriculares"
+    },
+    {
+        "date": "14:41:51",
+        "enabled": 1,
+        "prize": "descuento"
+    },
+    {
+        "date": "14:49:09",
+        "enabled": 1,
+        "prize": "auriculares"
+    },
+    {
+        "date": "14:50:01",
+        "enabled": 1,
+        "prize": "gafas"
+    },
+    {
+        "date": "15:03:17",
+        "enabled": 1,
+        "prize": "gopro"
+    },
+    {
+        "date": "15:07:24",
+        "enabled": 1,
+        "prize": "gafas"
+    },
+    {
+        "date": "15:12:20",
+        "enabled": 1,
+        "prize": "descuento"
+    },
+    {
+        "date": "15:14:43",
+        "enabled": 1,
+        "prize": "auriculares"
+    },
+    {
+        "date": "15:22:58",
+        "enabled": 1,
+        "prize": "gafas"
+    },
+    {
+        "date": "15:26:52",
+        "enabled": 1,
+        "prize": "descuento"
+    },
+    {
+        "date": "15:28:24",
+        "enabled": 1,
+        "prize": "auriculares"
+    },
+    {
+        "date": "15:34:17",
+        "enabled": 1,
+        "prize": "gafas"
+    },
+    {
+        "date": "15:41:13",
+        "enabled": 1,
+        "prize": "auriculares"
+    },
+    {
+        "date": "15:44:58",
+        "enabled": 1,
+        "prize": "auriculares"
+    },
+    {
+        "date": "15:48:20",
+        "enabled": 1,
+        "prize": "descuento"
+    },
+    {
+        "date": "15:55:48",
+        "enabled": 1,
+        "prize": "gafas"
+    },
+    {
+        "date": "15:58:37",
+        "enabled": 1,
+        "prize": "auriculares"
+    },
+    {
+        "date": "16:02:30",
+        "enabled": 1,
+        "prize": "gafas"
+    },
+    {
+        "date": "16:11:58",
+        "enabled": 1,
+        "prize": "gafas"
+    },
+    {
+        "date": "16:18:20",
+        "enabled": 1,
+        "prize": "auriculares"
+    },
+    {
+        "date": "16:19:46",
+        "enabled": 1,
+        "prize": "impresora"
+    },
+    {
+        "date": "16:29:03",
+        "enabled": 1,
+        "prize": "descuento"
+    },
+    {
+        "date": "16:34:40",
+        "enabled": 1,
+        "prize": "auriculares"
+    },
+    {
+        "date": "16:37:32",
+        "enabled": 1,
+        "prize": "gafas"
+    },
+    {
+        "date": "16:42:55",
+        "enabled": 1,
+        "prize": "gafas"
+    },
+    {
+        "date": "16:51:47",
+        "enabled": 1,
+        "prize": "descuento"
+    },
+    {
+        "date": "16:52:34",
+        "enabled": 1,
+        "prize": "auriculares"
+    },
+    {
+        "date": "16:54:24",
+        "enabled": 1,
+        "prize": "gafas"
+    },
+    {
+        "date": "16:54:30",
+        "enabled": 1,
+        "prize": "auriculares"
+    },
+    {
+        "date": "16:59:33",
+        "enabled": 1,
+        "prize": "skate"
+    },
+    {
+        "date": "17:13:12",
+        "enabled": 1,
+        "prize": "auriculares"
+    },
+    {
+        "date": "17:17:34",
+        "enabled": 1,
+        "prize": "gafas"
+    },
+    {
+        "date": "17:22:21",
+        "enabled": 1,
+        "prize": "gafas"
+    },
+    {
+        "date": "17:22:34",
+        "enabled": 1,
+        "prize": "descuento"
+    },
+    {
+        "date": "17:35:30",
+        "enabled": 1,
+        "prize": "auriculares"
+    },
+    {
+        "date": "17:48:05",
+        "enabled": 1,
+        "prize": "gafas"
+    },
+    {
+        "date": "17:49:26",
+        "enabled": 1,
+        "prize": "auriculares"
+    },
+    {
+        "date": "17:53:13",
+        "enabled": 1,
+        "prize": "descuento"
+    },
+    {
+        "date": "17:55:29",
+        "enabled": 1,
+        "prize": "auriculares"
+    },
+    {
+        "date": "18:04:01",
+        "enabled": 1,
+        "prize": "gafas"
+    },
+    {
+        "date": "18:09:44",
+        "enabled": 1,
+        "prize": "auriculares"
+    },
+    {
+        "date": "18:10:01",
+        "enabled": 1,
+        "prize": "gafas"
+    },
+    {
+        "date": "18:26:45",
+        "enabled": 1,
+        "prize": "auriculares"
+    },
+    {
+        "date": "18:26:59",
+        "enabled": 1,
+        "prize": "descuento"
+    },
+    {
+        "date": "18:31:52",
+        "enabled": 1,
+        "prize": "gafas"
+    },
+    {
+        "date": "18:35:40",
+        "enabled": 1,
+        "prize": "skate"
+    },
+    {
+        "date": "18:38:21",
+        "enabled": 1,
+        "prize": "descuento"
+    },
+    {
+        "date": "18:44:27",
+        "enabled": 1,
+        "prize": "auriculares"
+    },
+    {
+        "date": "18:46:33",
+        "enabled": 1,
+        "prize": "gafas"
+    },
+    {
+        "date": "18:53:51",
+        "enabled": 1,
+        "prize": "auriculares"
+    },
+    {
+        "date": "18:59:13",
+        "enabled": 1,
+        "prize": "gafas"
+    },
+    {
+        "date": "19:01:05",
+        "enabled": 1,
+        "prize": "gafas"
+    },
+    {
+        "date": "19:06:51",
+        "enabled": 1,
+        "prize": "auriculares"
+    },
+    {
+        "date": "19:21:39",
+        "enabled": 1,
+        "prize": "gafas"
+    },
+    {
+        "date": "19:26:50",
+        "enabled": 1,
+        "prize": "auriculares"
+    },
+    {
+        "date": "19:26:57",
+        "enabled": 1,
+        "prize": "descuento"
+    },
+    {
+        "date": "19:30:46",
+        "enabled": 1,
+        "prize": "auriculares"
+    },
+    {
+        "date": "19:31:02",
+        "enabled": 1,
+        "prize": "gafas"
+    },
+    {
+        "date": "19:48:13",
+        "enabled": 1,
+        "prize": "descuento"
+    },
+    {
+        "date": "19:53:54",
+        "enabled": 1,
+        "prize": "gafas"
+    },
+    {
+        "date": "19:57:01",
+        "enabled": 1,
+        "prize": "auriculares"
+    },
+    {
+        "date": "20:04:49",
+        "enabled": 1,
+        "prize": "descuento"
+    },
+    {
+        "date": "20:05:19",
+        "enabled": 1,
+        "prize": "auriculares"
+    },
+    {
+        "date": "20:06:08",
+        "enabled": 1,
+        "prize": "gafas"
+    },
+    {
+        "date": "20:14:49",
+        "enabled": 1,
+        "prize": "gafas"
+    },
+    {
+        "date": "20:20:01",
+        "enabled": 1,
+        "prize": "auriculares"
+    },
+    {
+        "date": "20:22:04",
+        "enabled": 1,
+        "prize": "ipad"
+    },
+    {
+        "date": "20:27:15",
+        "enabled": 1,
+        "prize": "gafas"
+    },
+    {
+        "date": "20:28:17",
+        "enabled": 1,
+        "prize": "auriculares"
+    },
+    {
+        "date": "20:41:01",
+        "enabled": 1,
+        "prize": "descuento"
+    },
+    {
+        "date": "20:47:35",
+        "enabled": 1,
+        "prize": "auriculares"
+    },
+    {
+        "date": "20:51:44",
+        "enabled": 1,
+        "prize": "gafas"
+    },
+    {
+        "date": "20:58:05",
+        "enabled": 1,
+        "prize": "auriculares"
+    },
+    {
+        "date": "20:59:52",
+        "enabled": 1,
+        "prize": "descuento"
+    },
+    {
+        "date": "21:04:16",
+        "enabled": 1,
+        "prize": "gafas"
+    },
+    {
+        "date": "21:10:55",
+        "enabled": 1,
+        "prize": "gafas"
+    },
+    {
+        "date": "21:15:10",
+        "enabled": 1,
+        "prize": "skate"
+    },
+    {
+        "date": "21:21:42",
+        "enabled": 1,
+        "prize": "auriculares"
+    },
+    {
+        "date": "21:24:06",
+        "enabled": 1,
+        "prize": "descuento"
+    },
+    {
+        "date": "21:26:18",
+        "enabled": 1,
+        "prize": "gafas"
+    },
+    {
+        "date": "21:28:57",
+        "enabled": 1,
+        "prize": "auriculares"
+    },
+    {
+        "date": "21:37:31",
+        "enabled": 1,
+        "prize": "gafas"
+    },
+    {
+        "date": "21:46:27",
+        "enabled": 1,
+        "prize": "auriculares"
+    }
+]

@@ -4,8 +4,8 @@
   "linear_time" : 100,
   "exponential_time" : 1500,
   "icon" : 180,
-  "width" : 960,
-  "height" : 720,
+  "width" : 432,
+  "height" : 768,
   "sleep": 1500,
   "background" : ["FFFDC2", "F4EA6E", "F7B228", "F48C7D", "F74F6F", "F995BA", "E3CAEF", "9DC0C9", "70F2D9", "81EAAE"]
 }
